@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.sadapay</groupId>
+    <artifactId>parent-pom</artifactId>
+    <version>2.2.0</version>
+  </parent>
+
+  <artifactId>logging-utils</artifactId>
+  <version>0.0.5-SNAPSHOT</version>
+  <name>Logging Utils</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.zalando</groupId>
+      <artifactId>logbook-spring-boot-starter</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.13.3</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>sadapay-nexus</id>
+      <url>
+        http://ec2-3-249-244-209.eu-west-1.compute.amazonaws.com:8081/repository/maven-releases/
+      </url>
+    </repository>
+
+    <snapshotRepository>
+      <id>sadapay-nexus</id>
+      <url>
+        http://ec2-3-249-244-209.eu-west-1.compute.amazonaws.com:8081/repository/maven-snapshots/
+      </url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <scm>
+    <connection>scm:git:https://github.com/SadaPay/logging-utils.git</connection>
+    <developerConnection>scm:git:https://github.com/SadaPay/logging-utils.git
+    </developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+</project>

@@ -1,0 +1,13 @@
+.classpath
+.project
+.settings/
+target/
+.vertx
+data/
+.idea
+*.iml
+*.retry
+pom.xml.versionsBackup
+authentication-service.log
+.openapi-generator/
+.openapi-generator-ignore
